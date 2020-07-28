@@ -1,0 +1,14 @@
+v e v -> verdadeiro
+v e f -> falso
+f e f -> falso
+
+v ou v -> verdadeiro
+v ou f -> verdadeiro
+f ou f -> falso
+
+v xor v -> falso
+v xor f -> verdadeiro
+f xor f -> falso
+
+!v -> falso
+!f -> verdadeiro
