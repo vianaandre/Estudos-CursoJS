@@ -1,0 +1,44 @@
+FUNÇÕES
+
+cidadão de primeira linha 
+função está associado a um algoritmo
+função em javascript está associado a um dado 
+função: first-class object (citizens)
+* criar de forma literal 
+* armazenar em uma variável 
+* armazenar dentro de uma array: o ideal nesse contexto é criar uma 
+função fora dessa array e chamar dentro da array
+* armazenar em um atributo de objeto 
+* passar função como parametro para outra função 
+* uma função pode retornar/conter uma função 
+
+parametros e retornos são opcionais 
+* se passar mais parametros que foram declarador, o js vai pegar apenas 
+os dois primeiros valores
+
+parametros e variáveis
+* com ela voce tem a possibilidade de passar varios parametros usando o argumets 
+
+
+valor padrão 
+* estrategia 01: usar || (o problema desta estrategia é que quando se passa o valor 0 
+ele não retorna o valor 0 mais sim o valor que está no || 
+* estrategia 02: a = a !== underfined ? a : 1 (operador ternario)
+* estrategia 03: com indice argumets 
+* estrategia 04: isNaN(variável) (caso ela seja um numero ele passa um NaN) 
+valor padrão do es2015
+* valores padrões ja atribuidos junto com os parametros 
+
+this pode variar 
+* no paradigma OO, ele funciona com um objeto dentro de uma classe, um exemplo
+é quando voce tem um objeto aluno e todo o aluno tem uma nota e nome, e essa nota e nome 
+pertecem ao objeto e não a classe 
+* o this pode variar conforme voce declara uma varivel, ou seja, se voce declarar de forma tradicional 
+ele vai poder variar conforma voce chama aquela função, mas se voce declarar de forma uma forma com a sintaxe 
+mais pequena (exe: usando uma variável) ele pode não variar  
+
+obs: quando se cria uma função dentro de uma variável, voce está criando essa função dentro do escopo global 
+
+
+
+
