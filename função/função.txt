@@ -37,7 +37,25 @@ pertecem ao objeto e não a classe
 ele vai poder variar conforma voce chama aquela função, mas se voce declarar de forma uma forma com a sintaxe 
 mais pequena (exe: usando uma variável) ele pode não variar  
 
-obs: quando se cria uma função dentro de uma variável, voce está criando essa função dentro do escopo global 
+obs: quando se cria uma função dentro de uma variável, voce está criando essa função dentro do escopo global
+
+This e a função bind 01 
+* o bind tem a função de pegar determinados componentes dentro de escopo e trazelos para fora. 
+
+This e a função bind 02 
+* voce tem outro meio de acessar uma this, basicamente pode se criar uma constante dentro de uma função, 
+fazendo com que o this aponte para o nome da função, assim eu posso criar outras funções dentro de uma função 
+usando o atributo this que foi nomeado. 
+
+Função arrow
+* metodo de escrever uma função de uma maneira mais reduzida 
+* na função arrow, o this se liga ao contexto que a função foi escrita. 
+
+Função anonima
+* nela voce pode criar funções sem nome
+
+obs: control alt m (para a execução) 
+
 
 
 
