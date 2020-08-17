@@ -54,7 +54,20 @@ Função arrow
 Função anonima
 * nela voce pode criar funções sem nome
 
+Callback: chama de volta 
+forEach: ele executa uma função que foi declarada apenas uma vez para cada elemento dentro de uma array
+Callback usando filter: ela filtra determinados elementos de um array avaliando a condição de false e true 
+Callback está muito relacionado a um evento, e esse determinado evento pode então chamar uma função  
+
+Função construtura: basicamente se cria uma função com determinados eventos dentro dela, esses eventos podem
+ou não serem privados, logo depois de cria a função voce pode chamar ela para fora criando instancias e 
+chamando os eventos 
+
 obs: control alt m (para a execução) 
+obs: padrão de projeto mais utilizado na web é o observer 
+
+
+
 
 
 

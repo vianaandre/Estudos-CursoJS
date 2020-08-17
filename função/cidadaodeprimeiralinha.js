@@ -8,8 +8,9 @@ const ler = function (escrita){
 console.log(ler("lindo"))
 
 //função dentro de um array 
-const array = [ function (a) { return a } ]
+const array = [ function (a) { return a }, function (b) {return b * 2} ] 
 console.log(array[0]("Opa"))
+console.log(array[1](Math.PI))
 
 //função dentro de um objeto 
 const obj = {}

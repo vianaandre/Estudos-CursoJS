@@ -3,7 +3,7 @@ const soma = function (x, y) {
 }
 
 //Arrow function
-const Somateste = (a, b, operação = soma) => { console.log(`Operação: ${operação(a, b)}`)} 
+const Somateste = (a, b, operação = soma) => { console.log(`${a} + ${b}: ${operação(a, b)}`)} 
 // nesse contexto forem  criados functions dentro de valores de parametros  
 Somateste(5, 2, function(x, y) {
     return x + y
