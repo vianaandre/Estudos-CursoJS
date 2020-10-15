@@ -12,5 +12,5 @@ function imprimirNomegritando (obj) {
     }
 }
 
-const obj = { name: 'Roberto' } 
+const lobj = { name: 'Roberto' } 
 imprimirNomegritando(obj)

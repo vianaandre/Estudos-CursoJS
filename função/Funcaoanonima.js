@@ -10,3 +10,12 @@ Somateste(5, 2, function(x, y) {
 })
 Somateste(3, 5,  (x, y) =>  x * y)
 Somateste(4, 1, (x, y) => x - y)
+
+
+const teste = function (a, b) {
+    return a * b
+}
+const testecal = (e, r, open) => console.log(`${e} + ${r} = ${open(e, r)}`)
+testecal(3, 5, function(e, r) {
+    return e * r
+})

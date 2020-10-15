@@ -1,0 +1,40 @@
+Estrutura de Controle 
+* sempre que for usar uma estrutura de controle, use as que mais se 
+adequa ao seu caso, ou seja, por exemplos quando voce tem multiplas escolhas, sempre
+use o switch, ou quando tem que repetir por vezes indeterminadas, voce usa o while, e assim
+por diante. 
+
+- if: tudo que é verdadeiro 
+* sempre que for usar o if, coloque logo de pois da condição um bloco de chaves para ter um maior 
+controle com o if. 
+* cuidado com a ';', porque ela determina o fim de uma sentença de código, e isso pode atrapalhar 
+com o if. 
+- if/else: quando voce quer expressar uma expressão quando for verdeira ou quando for falsa 
+- if/elseif: usado para múltiplas escolhas, ou seja, use ele quando tiver varias condições para serem 
+atendidas. 
+- Switch 
+* É uma seleção multipla escolhas 
+* Não é uma seleção de verdadeiro ou falso
+* Com o switch voce tem que colocar o break (desvio de fluxo) para poder ter o controle sobre determinado caso 
+* pode se colocar varios case associados para ter uma unica setença de código 
+
+- While
+* É uma função de repetição onde não se tem um determinado valor de vezes para ser executado 
+* É usado mais para quando não se tem uma quantia determinada de vezes para sua repetição 
+
+- do while
+* É uma função que serve basicamente para executar pelo menos uma vez determina repetição 
+
+- For 
+* Estrutura de repetição onde voce tem determinado o tanto de vezes que aquela determinada 
+repetição vai seguir, ela se diferencia do while porque com ela eu tenho a possibilidade de criar 
+uma variável dentro dos parentes de for 
+
+- forin 
+* ele é muito usado com objetos e arrays 
+* sempre que for usar nomeie com as propriedades de const ou let ou var para poder permitir que ele
+só seja usado dentro da estrutura de for
+
+- break e continue 
+* o break sai da estrutura mãe 
+* o continue saí da primeira estrutura acima dele

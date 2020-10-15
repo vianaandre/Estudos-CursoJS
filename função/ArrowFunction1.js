@@ -5,3 +5,5 @@ comparando(global) // nesse contexto de this dentro de uma função dentro de um
 
 let comparando2 = param1 => {console.log(param1===this)}
 comparando2(global)// já nesse o this estara atrelado ao contexto da função 
+
+

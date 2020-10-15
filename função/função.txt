@@ -1,20 +1,19 @@
 FUNÇÕES
 
-cidadão de primeira linha 
+Cidadão de primeira linha:
 função está associado a um algoritmo
 função em javascript está associado a um dado 
 função: first-class object (citizens)
 * criar de forma literal 
 * armazenar em uma variável 
-* armazenar dentro de uma array: o ideal nesse contexto é criar uma 
-função fora dessa array e chamar dentro da array
+* armazenar dentro de uma array: o ideal nesse contexto é criar uma função fora dessa array e chamar dentro da array
 * armazenar em um atributo de objeto 
 * passar função como parametro para outra função 
 * uma função pode retornar/conter uma função 
 
 parametros e retornos são opcionais 
 * se passar mais parametros que foram declarador, o js vai pegar apenas 
-os dois primeiros valores
+os primeiros valores em relelçao a quantidade de parametros passados 
 
 parametros e variáveis
 * com ela voce tem a possibilidade de passar varios parametros usando o argumets 
@@ -49,10 +48,45 @@ usando o atributo this que foi nomeado.
 
 Função arrow
 * metodo de escrever uma função de uma maneira mais reduzida 
-* na função arrow, o this se liga ao contexto que a função foi escrita. 
+* na função arrow, o this se liga ao contexto que a função foi escrita.
 
 Função anonima
 * nela voce pode criar funções sem nome
+* com uma função anonima voce tem a possibilidade de passar ela para uma variável ou uma function*  
+* da também para usar uma função anonima usando um objeto, ou seja, voce pode acessar essa função utilizando o nome.
+nomedoobjeto 
+
+Callback: chama de volta 
+* forEach: ele executa uma função que foi declarada apenas uma vez para cada elemento dentro de uma array
+* Callback usando filter: ela filtra determinados elementos de um array avaliando a condição de false e true 
+* Callback está muito relacionado a um evento, e esse determinado evento pode então chamar uma função  
+
+Função construtura: basicamente se cria uma função com determinados eventos dentro dela, esses eventos podem
+ou não serem privados, logo depois de cria a função voce pode chamar ela para fora criando instancias e 
+chamando os eventos 
+
+Contexto léxico:
+* contexto na qual as coisas são declaradas 
+* nesse contexto uma determinada função vai seguir o seu contexto de execução, aonde foi declarada, não importa 
+se ela foi chamado longe da sua declaração, ela vai continuar com o meu contexto 
+
+Closures: 
+* é o escopo criado quando uma função é declarada 
+* esse escopo permite a função manipular variáveis externas á função 
+
+Função Factory
+* é uma função que retorna um objeto novo 
+
+Factory vs classes
+* na classe o escopo acaba não tendo o contexto léxico, ja na factory sim, na classe voce precisa usar o this e na factory 
+necessariamente não
+
+IIFE:
+* função de expressão imediatamente invocada 
+* basicamente voce cria funções dentro de parênteses e chama com parênteses 
+
+Call e Apply: 
+
 
 Callback: chama de volta 
 forEach: ele executa uma função que foi declarada apenas uma vez para cada elemento dentro de uma array

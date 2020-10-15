@@ -18,8 +18,9 @@ function carro (velocidadeMaxima = 200, delta = 5) {
     }
 }
 
-//quanto mais uno.valocidade eu der mais acelerado o carro vai ficar
+//quanto mais uno.velocidade eu der mais acelerado o carro vai ficar
 const uno = new carro()
+uno.velocidade()
 uno.velocidade()
 uno.velocidade()
 uno.velocidade()

@@ -1,12 +1,12 @@
 let num2 = function (a) {
-    return 2 * a
+    return this === a
 }
 
 num2 = (a) => {
-    return 2 * a
+    return this === a
 }
 
-num2 = a => 2 * a // returno implicito, ou seja, retorno com apenas uma funcionalidade 
+num2 = a => this === a // returno implicito, ou seja, retorno com apenas uma funcionalidade 
 
 console.log(num2(Math.PI))
 

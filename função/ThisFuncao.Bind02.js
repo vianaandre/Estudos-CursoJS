@@ -1,4 +1,5 @@
 function anos() {
+    this.id = 12
     this.idade = 0 
 
     const self = this 
@@ -9,3 +10,6 @@ function anos() {
 }
 
 new anos // modo de chamar uma função  
+
+
+

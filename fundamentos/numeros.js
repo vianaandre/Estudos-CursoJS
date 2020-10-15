@@ -1,5 +1,9 @@
+
+// import { number } from "mathjs"
 const peso1 = 1.3
 const peso2 = Number('2.0')//(2.0) VALOR ATRIBUIDO A PESO2
+const peso3 = Number('2')
+console.log(peso3)
 
 console.log(peso1, peso2)
 console.log(Number.isInteger(peso1))//INTEIRO  
@@ -17,3 +21,5 @@ console.log(media.toString())//RETORNA
 console.log(media.toString(2))//BINARIO 
 console.log(typeof media)//PROPRIEDADE 
 console.log(typeof Number)//FUNÇÃO 
+
+console.log(typeof Math)

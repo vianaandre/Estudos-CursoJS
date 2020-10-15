@@ -12,3 +12,13 @@ function anos () {
 }
 
 new anos 
+
+// aponta para o contexto global e não o da variável 
+function teste (a) {
+    console.log(this === a)
+}
+teste(global)
+
+// aponta para o contexto da variável 
+const teste1 = b => console.log(this === b)
+teste1(global)

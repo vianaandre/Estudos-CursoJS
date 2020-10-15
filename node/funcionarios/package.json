@@ -1,0 +1,18 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "Entendendo o arquivo packege.json",
+  "main": "funcionarios.js",
+  "scripts": {
+    "start": "nodemon", 
+    "dede": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Nome": "André"
+  }, 
+  "author": "André",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "0.20.0"
+  }
+}

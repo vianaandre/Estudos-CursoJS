@@ -1,0 +1,101 @@
+Introdução ao Objeto - vice presidente 
+objeto é um função 
+
+* linguagem estruturada 
+procedoral: basicamente voce tem um trecho de código com um nome e
+usa esse determinado nome em outros lugares. Outro conceito muito forte 
+do paradigma procedoral é que uma função recebe dados e trata eles da forma
+que quiser 
+OO: são centralizadas em cima dos Objetos, basicamente são dados que podem manipular
+atributos e funções. Outro conceito legal dos objetos é a herança, ou seja, um objeto pode 
+erdar caracteristicas (atributos, comportamentos) de outro objeto. 
+
+1. Abastração de objetos: basicamente pega somente as coisas necessarias para o sistema que irá criar. 
+Basicamente pega se as coisas necessarias de problema para se resolver ele. 
+
+2 . Encapsulamento: tem haver com os detalhes de implementação, ou seja, aquilo que a interface de usuario não mostra 
+. Ele é super importante para não haver muita comunicação entre dois objetos, porque havendo essa comunicação a mudança de 
+um pode mudar outro e assim acaretar em muito problemas 
+
+3 . Herança (prototype): 
+composição: basicamente cria objeto que recebe outros objetos, ou seja, pego e crio um objeto de carro e dentro dele atribuo o objeto 
+motor que pode ser mais complexo, fazendo com que o objeto carro seja algo mais simples, porém que recebe objetos mais complexos 
+herança: basicamente é voce pegar caracteristicas de um determinado objeto e passar para outro
+
+4 . Polimorfismo: voce pega algo generalizado e passa opções para esse algo. 
+exemplo: carro - uno ou ferrari ou gol ...
+
+Revisão de objetos: 
+dentro de objeto posso colocar outros objetos 
+dentro de objeto posso colocar arrays 
+dentro de objeto posso colocar funções 
+
+Estrategias de criação de objetos: 
+objetos criados de forma literal 
+objetos são funçoes, porém quando instanciados viram objetos (new) 
+com funções construturas posso criar estrategicamente objetos que tem o mesmo nome porém contém 
+atributos com valores diferentes (parametros) 
+a partir do return de uma função eu consigo criar objetos que retorne atributos e até outras funções
+criando objetos com a função create
+json retorna objetos 
+
+Objetos constantes 
+um objeto com const aponta para um endereço fixo, e os atributos ficam dentro desse endereço, fazendo com que eu 
+consiga manipular os atributos dentro do objeto, porém não consigo colocar o objetos em outro endereço 
+com o object.freeze eu tenho a possibilidade de restringir a manipulação dos atributos do objeto 
+
+Getters/Setters ( são funções,  e dentro dessas funções os valores são acessados) 
+esses metodos serve muito para aplicar validações em atributos dentro de um objeto 
+getters: lê uma variável 
+setters: altera o valor de uma variável 
+_nomeobjeto = serve para mostra que essa variável é de acesso privado, porém isso não modifica nada na variável 
+
+Funções e comportamentos importantes do Objetivo 
+keys: pega os nomes dos atributos
+values: valores dos atributos 
+entries: vai te dar um array com todo os atributos e valores juntos em indices diferentes 
+destruturing: a partir de um forEch voce tem a possibilidade de pegar os valores transformados 
+em arrays com entries e percorrer eles transformando em cheve a valor novamente 
+defineProperty: usado para definir caracteristicas especificas do atributo de um objeto 
+
+Herança: (é o principio da OO, objetivo da herança é que seja reutilizado os códigos 
+* na herança voce só consegue ter um ancestral 
+herança1: 
+os prototype são os pais que tem atributos especificos que muita das vezes os filhos não,  e para 
+eu conseguir acessar esses atributos basta eu colocar o nome do meu objeto e __proto__ que ele vai buscar valores de 
+atributos que não tem no meu objeto 
+herança2: 
+podemos expecificar o pai de duas maneiras, podemos expecificar atraves do objeto filho colocando o __proto__ nome do pai, ou podemos 
+fazer atraves do object.setprototypeof(nomefilho, nomepai) 
+herança3: 
+podemos acessar os objetos que estão cetados pra serem os prototypes, a partir do object.create, porém quando listados os atributos de um objeto que 
+esta apontando para um prototype os atributos desse objetos não estaráo sendo visto, porque ele só vai listar os que foram criados dentro do objeto que 
+recebeu o prototype. Para poder vereficar se um atributo pertence aquele objeto ou está como herança, usa se for in. 
+herança4: 
+quando voce instancia uma função, voce esta criando um obejto, e esses objetos criados a partir dessa função estão apontando com o __proto__ para a function que 
+voce estanciou
+essa função que é a prototype dos objetos, está apontando para um function.prototype e essa function.prototype está apontando para um object.prototype 
+herança5: 
+O string, array e objetos são function, e por isso eles apontam para uma function prototype, e a partir disso eu posso criar funções que não fazem parte do escopo global 
+de string ou array, e com isso eu consigo executar funções especificas dentro de propriedades que não as tem. 
+
+EvitandoModificações: 
+object.preventExtensions dá a possibilidade apenas de modificarmos e deletarmos atributos de objetos, porém não de acrescentar novos 
+object.seal dá a possibilidade apenas de modificar um atributo dentro de um objeto 
+object.freeza não dá a liberdade de fazer nada com os atributos de um objeto
+
+JSON vs Objeto: 
+para transformar um objeto em JSON é só chamar a função JSON.stringify 
+para transformar a um JSON em objeto é só chamar o JSON.parse e colocar os atributos e valores (strings) com aspas duplas 
+
+
+
+Diferença de atributo e comportamento 
+Atributo: valores (exemplo de carro: valocidade maxima, tamanho, peso) 
+Comportamento: Metodos (acelerar, freiar, dar ré)
+assing: ele concatena atributos de outros objetos a partir do objeto que voce passou para receber esses atributos
+basicamente o __proto__ faz a ligação até o objeto pai e o objeto pai é o object.prototype
+
+
+
+

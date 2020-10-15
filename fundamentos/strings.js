@@ -11,4 +11,5 @@ console.log('Escola '.concat(escola).concat('!'))//CONCATENAÇÃO
 console.log('Escola ' + escola + '!')//CONCATENAÇÃO 
 console.log(escola.replace(3, 4))//SUBSTITIU
 
-console.log('Andre,Ana,Bianca'.split())//QUABRA UMA FUNÇÃO EM ARRAY 
+console.log('Andre,Ana,Bianca'.split())//QUEBRA UMA FUNÇÃO EM ARRAY 
+

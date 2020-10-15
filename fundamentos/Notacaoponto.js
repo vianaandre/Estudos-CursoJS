@@ -4,10 +4,10 @@ console.log(typeof Math)
 
 const obj1 = {}
 obj1.nome = 'BOLA'
-console.log(obj1.nome)//posso pegar o valor agragado especifico declarado dentro de um objeto
+console.log(obj1.nome)//posso pegar um atributo especifico declarado dentro de um objeto
 
 function Obj(nome){
-    this.nome = nome //torna uma variável que está dentro da função puplica
+    this.nome = nome //torna um parametro privado global 
     this.exec = function() {
         console.log('Exec...');
     }

@@ -13,7 +13,8 @@ valores.push({id: 7}, false, null, 'teste')//ACRESCENTA NOVOS ARRAYS
 console.log(valores)
 console.log(valores.length)
 
-console.log(valores.pop())//CONSOME COM O ULTIMO DA POSIÇÃO DE ARRAYS 
+console.log(valores.pop())//CONSOME COM O ULTIMO DA POSIÇÃO DE ARRAYS
+console.log(typeof valores.pop())
 delete valores[2]//DELETA POR POSIÇÃO 
 console.log(valores)
 

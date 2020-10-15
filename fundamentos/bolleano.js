@@ -10,6 +10,7 @@ console.log(!!isAtivo)//!:NEGAÇÃO !!:VOLTA PARA O VALOR ORIGINAL, OU SEJA, VER
 console.log('os verdeiros...')
 console.log(!!3)
 console.log(!!-1)
+console.log(!!1)
 console.log(!!' ')//POR CAUSA DO ESPAÇO
 console.log(!!'texto')
 console.log(!![])//FUNÇAÕ ARRAY 

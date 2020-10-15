@@ -10,11 +10,12 @@ console.log(ler("lindo"))
 //função dentro de um array 
 const array = [ function (a) { return a }, function (b) {return b * 2} ] 
 console.log(array[0]("Opa"))
-console.log(array[1](Math.PI))
+console.log(array[1](3))
 
 //função dentro de um objeto 
-const obj = {}
-obj.falar = function () { return "Executando..."}
+const obj = {
+    falar: function () { return "Executando..."}
+}
 console.log(obj.falar())
 
 //função como parametro para outra função
@@ -30,3 +31,4 @@ function soma(a, b) {
     }
 }
 soma(1, 5)(3)
+

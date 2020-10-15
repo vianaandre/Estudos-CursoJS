@@ -17,4 +17,12 @@ console.log(global.abc)
 
 
 
+this.lindo = 'lindo'
+this.nome = 'André'
+this.idade = 10 
+this.dat = Date
+
+
+console.log(module.exports)
+
 

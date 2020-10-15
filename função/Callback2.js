@@ -24,3 +24,7 @@ const NotasMenor7 = nota => nota < 7
 const NotasBaixas3 = notas.filter(NotasMenor7)
 console.log(NotasBaixas3)
 
+const menores = notas.filter(nota1 => nota1 < 7)
+console.log(menores)
+
+

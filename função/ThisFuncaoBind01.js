@@ -11,3 +11,6 @@ testePessoa()// conflito de paradigmas OO e funcional
 
 const UsandoBind = pessoa.falar.bind(pessoa) //bind traz componentes dentro de um escopo para fora 
 UsandoBind()
+
+
+

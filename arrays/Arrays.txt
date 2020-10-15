@@ -1,0 +1,42 @@
+Me´tCapítulo de Array 
+
+Array:
+O array é um objeto que organiza seus atributos por indices
+podemos acessar um determinado valor dentro de um arrays átraves de um indice, e também podemos acrescentar novos valores ou 
+modificar valores átraves de um indice, ou podemos também adicionar novos arrays atraves do meotodo push 
+Para deletar um array é só chamar a função delete, porém essa função apenas deixa o arrays indefinido e não exclue o inidice dele 
+Para ordenar um array é só chamar a função sort 
+E para tanto adicionar novos elementos como excluir elementos de um array é só chamar a função splice  
+
+Métodos Arrays: 
+método de pop remove o ultimo elemento 
+método de push adiciona partindo do ultimo elemento 
+método de shift remove o elemento da primeira posição 
+método de unshift adiciona partindo da primeira posição 
+método de splice que dá a possibilidade de remover elemento e acrescentar novos
+método de slice cria um novo arrays usando alguns elementos do arrays criando antes 
+
+
+Método Foreach: 
+o método foreach é usado para percorre um array, ele pode ser usado implemento um callback, um até um array function, porém esse método é extremamente ruim de ser 
+usado porque é voce que tem que delimitar um função para ele, já nos metodos de reduce e filter acabam que tendo um prosito maior 
+
+Map: 
+map é usado para transformar um array partindo de funcões callback, o map cria um novo array, fazendo com que o array que foi usado no map não seja transformado 
+apenas usado para criar um novo
+
+Filter: 
+filtra os elementos de um array partindo de uma condição que é criado como callback 
+
+Reduce: 
+o reduce pega o elementos anterior e parte de uma condição com o atual, por exemplo, indice 0 + indice 1, e assim por diante, como o reduce voce também tem a possibilidade 
+de começar com um valor dado por voce e dai ir acomulando 
+
+Imperativo vs Declarativo: 
+No modo imperativo é dado passo a passo do que deve ser feito, já no modo declarativo só diz oque deve ser feito e não dá o passo a passo de como deve ser feito 
+
+Concat: 
+
+
+obs: o array é heterogeneo e por isso é de boa pratica que voce use só um tipo 
+em um array 
