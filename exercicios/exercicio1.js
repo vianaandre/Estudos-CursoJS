@@ -1,10 +1,10 @@
-// soma, subtração, multiplicação e divisão 
+// soma, subtração, multiplicação e divisão
 function calc (x, y) {
     console.log(`${x} + ${y} = ${x + y}`)
     console.log(`${x} - ${y} = ${x - y}`)
     console.log(`${x} * ${y} = ${x * y}`)
     console.log(`${x} / ${y} = ${x / y}`)
-} 
+}
 calc(3, 50)
 calc(4, 6)
 calc(20, 4)

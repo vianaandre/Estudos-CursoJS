@@ -1,10 +1,11 @@
+const { strict } = require("assert")
 const { valor } = require("../node/instanciaÚnica")
 
 // arrow function
 const somar = (a, b) => a + b
 console.log(somar(3, 4))
 
-// this === exeports
+// this === exeports // nesse contexto sempre irá apontar para o escopo do modulo 
 const testeThis = () => console.log(this === exports)
 testeThis()
 
@@ -51,3 +52,4 @@ this.nome = 'André'
 this.idade = 18 
 this.anos = new Date()
 teste()
+

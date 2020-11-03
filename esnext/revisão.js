@@ -17,6 +17,7 @@ console.log(`Eu quero um ${produto}`)
 const [l, e, ...tras] = 'André' // para cada indice, um letra é indexada 
 console.log(l, e, tras)
 console.log(tras[0])// pegando o d de 'André'
+console.log(tras.length)
 
 const [a, , w] = [2, , 3]
 console.log(a + w)
@@ -24,4 +25,10 @@ console.log(a + w)
 const {nome: id, idade} = {nome: 'André', idade: 18}
 console.log(`O ${id} tem ${idade} anos!!`)
 
+const objeto = {
+    nome: 'André', 
+    idade: 12 
+}
 
+const {nome: name, idade: anos} = objeto
+console.log(name, anos)
