@@ -1,5 +1,6 @@
 # Estudos-CursoJS
-Curso web moderno completo com Javascript.
+Curso web moderno completo com Javascript
+
 Assuntos Tratados : 
 * Javascript 
 * NodeJS 
