@@ -17,3 +17,4 @@ jobs :
            GITHUB_TOKEN : $ {{secrets.GITHUB_TOKEN}} 
         com :
            NOME DE UTILIZADOR : $ {{github.repository_owner}}
+           ![CI](https://github.com/vianaandre/Estudos-CursoJS/workflows/CI/badge.svg?event=label)
