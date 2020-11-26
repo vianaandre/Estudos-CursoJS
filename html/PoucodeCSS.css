@@ -1,0 +1,10 @@
+/*Usando css externo*/
+.conteúdo {
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 0px 30px 0px 30px;
+}
+.negrito {
+    font-weight: bold;
+}

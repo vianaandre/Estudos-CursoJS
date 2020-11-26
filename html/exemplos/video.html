@@ -1,0 +1,109 @@
+<!--estrutura da página-->
+<div id="formatação" wm-moderno>
+    <video id="meuVideo" width="500" height="450">
+        <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="f-controls">
+    <div wm-progresso="meuVideo" class="progresso">
+        <div id="barra-status"></div>
+    </div>
+
+    <div>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="grande()">Big</button>
+        <button onclick="diminuir()">Small</button>
+        <button onclick="normal()">Normal</button>
+    </div>
+</div>
+
+<!--Estilização dos componentes da página-->
+<style>
+    /*estilizando os componentes de vídeo*/
+    #formatação {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0%;
+    }
+
+    /*posicionando  os itens dentro da div mãe*/
+    #f-controls {
+        padding-top: 0%;
+        margin: 0px;
+        width: 100%;
+        height: 20%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*estilizando a barra de status do vídeo*/
+    .progresso {
+        width: 500px;
+        height: 20px;
+        border: solid 1px black;
+        margin: 20px 0px 20px 0px;
+    }
+
+    /*estilizando a barra de duração do vídeo*/
+    #barra-status {
+        height: 100%;
+        width: 0%;
+        background-color: red;
+        color: #fff;
+        font-size: 14px;
+        text-align: right;
+        width: 0%;
+    }
+</style>
+
+<!--Passando os comportamentos dos eventos propostos na página-->
+<script>
+    // pegando o id meuVideo ta tag video 
+    const video = document.querySelector('[wm-moderno] > video')
+
+    // colocando restrição para não poder baixar o video 
+    video.oncontextmenu = () => false
+
+    // criando um função de percentual do video 
+    const divBarra = document.getElementById('barra-status')
+    function porcentagemVideo() {
+        setInterval(() => {
+            const tempo = video.currentTime
+            const percentual = (video.currentTime / video.duration) * 100
+            divBarra.style.width = `${percentual}%`
+            divBarra.innerHTML = `${tempo.toFixed(0)}`
+        })
+    }
+    divBarra.addEventListener(porcentagemVideo())
+
+    // criando as funções de controles
+    //1 = função de play e pause 
+    function playPause() {
+        if (video.paused) {
+            video.play() // utilizado para dar play caso esteja pausado 
+        } else {
+            video.pause() // utilizado para pausar caso esteja em play 
+        }
+    }
+    //2 = função de big 
+    function grande() {
+        video.width = 1000
+        video.heigth = 800
+    }
+    //3 = função de small
+    function diminuir() {
+        video.width = 300
+        video.heigth = 250
+    }
+    //4 = função de tornar normal 
+    function normal() {
+        video.width = 500
+        video.heigth = 450
+    }
+</script>

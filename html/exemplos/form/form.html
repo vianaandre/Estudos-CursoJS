@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<h1>Formulário</h1>
+<!-- Passando a ação como uma requisição e o método que será usado -->
+<form method="POST">
+    <input type="hidden" name="id" value="3">
+    <input type="text" name="nome"> <!--o name é de extrema importância porque é ele que da nome as request no backend -->
+    <input type="password" name="password">
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+    <input type="radio" name="tipo" value="Professor"> Professor
+    <input type="radio" name="tipo" value="Aluno"> Aluno
+    <input type="radio" name="tipo" value="Visitante"> Visitante
+    </div>
+
+    <div>
+        <select name="Linguagens">
+            <option value="">Seleção</option>
+            <option value="JS">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="checkbox" name="Ativo">Ativo
+    </div>
+
+    <div>
+        <select name="Habilidade" multiple size="5">
+            <option value="front-end">front-end</option>
+            <option value="back-end">back-end</option>
+            <option value="devOps">devOps</option>
+            <option value="IPO">IPO</option>
+            <option value="Analista de Dados">Analista de Dados</option>
+        </select>
+    </div>
+    
+    <button formaction="http://localhost:3003/usuarios">Incluir</button> <!--url de usuarios no geral-->
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button><!--url especifica alterando um usuario-->
+</form>
+
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+</style>

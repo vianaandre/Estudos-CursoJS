@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <style>
+         #conteudo {
+             padding: 30px 0px;
+             border: 3px groove black;
+             border-radius: 2px;
+             padding-left: 10px;
+         }   
+    </style>
+    <title>Exemplos HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplos HTML</h1>
+    </header>
+
+    <nav>
+        <a href="exemplos/teste.html">Exemplos - 00</a> |
+        <a href="exemplos/tagTextos.html">Textos - 01</a> | 
+        <a href="exemplos/tagTextos2.html">Textos - 02</a> |
+        <a href="exemplos/tagDelistas.html">Listas - 03</a> |
+        <a href="exemplos/tagListasAninhadas.html">Listas - 04</a> |
+        <a href="exemplos/links.html">Links - 05</a> |
+        <a href="exemplos/tabela.html">Tabela - 06</a> |
+        <a href="exemplos/form/form.html">Formulário - 07</a> |
+        <a href="exemplos/imagens.html">Imagens - 08</a> |
+        <a href="exemplos/video.html">Video - 09</a> |
+        <a href="exemplos/tagsNãoVisuais.html">Tags Não Visuais - 09</a> |
+        
+    </nav>
+
+    <section id="conteudo"></section>
+
+    <footer>
+        <br>
+        Curso Web Moderno
+    </footer>
+
+    <script>
+        //intercepitando um link do html
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')// pegando o id conteudo 
+
+            link.onclick = function (e) {
+                e.preventDefault() // faz com que a execução seja vista 
+                
+                fetch(link.href) // função que faz uma requisição ajax 
+                .then(resp => resp.text()) // pegando os texto do html 
+                .then(html => conteudo.innerHTML = html) // jogando para o id conteudo 
+            }
+        });
+    </script>
+</body>
+</html>

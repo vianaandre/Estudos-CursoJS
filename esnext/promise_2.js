@@ -7,7 +7,7 @@
 // }, 2000)
 
 function sequenciaAlunos(tempo = 2000) {
-    return new Promise(function(resolve) {
+    return new Promise(resolve => {
         setTimeout(function() {
             console.log('Executando...')
             resolve('Funcionado!!!')
