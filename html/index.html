@@ -7,8 +7,6 @@
     <style>
          #conteudo {
              padding: 30px 0px;
-             border: 3px groove black;
-             border-radius: 2px;
              padding-left: 10px;
          }   
     </style>
@@ -50,7 +48,7 @@
                 e.preventDefault() // faz com que a execução seja vista 
                 
                 fetch(link.href) // função que faz uma requisição ajax 
-                .then(resp => resp.text()) // pegando os texto do html 
+                .then(resp => resp.text()) // pegando os texto do html com a função text()
                 .then(html => conteudo.innerHTML = html) // jogando para o id conteudo 
             }
         });
