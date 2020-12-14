@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+
+        .c1 {
+            background-color: red;
+            float: right;
+            /* margin: 20px; */
+            /*como o elemento c2 está com clear, ele acaba que considerando o margin mesmo que o elemento não esteja lá*/
+        }
+
+        .c2 {
+            background-color: green;
+            /*torna o elemento flutuante visível*/
+            clear: both;
+        }
+
+        .c3 {
+            background-color: blue;
+            float: right;
+        }
+
+        .c4 {
+            background-color: orange;
+            clear: both;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            /*direita*/
+            /* float: right; */
+            /*esquerda*/
+            /* float: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Texto</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Texturina: wght @ 100 & display = swap" rel = "stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+        }
+        html {
+            font-size: 30px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div {
+            font-size: 30px;
+        }
+        p {
+            /* forma absoluta */
+            font-size: 50px;
+            font-size: 12pt;
+            font-size: 48pt;
+            font-size: 1in;
+
+            /* forma relativa - mais recomendada */
+            font-size: 2rem;
+            font-size: 3em;
+            font-size: 300%;
+
+            /* fontes-familys */
+            font-family: monospace;
+            font-family: Georgia, serif;
+            font-family: Texturina, serif;
+
+            font-weight: bolder;
+            font-style: italic;
+            text-transform: capitalize; /*colocando as primeiras letras das palavras em maiscula*/
+            text-decoration: overline underline line-through;
+            word-spacing: 100px; /*espaçamento entre as palavras*/
+            letter-spacing: 50px; /*espaçamento entre as letras*/
+            line-height: 100px; /*espaçamento entre as linhas*/
+        }
+        [button] {
+            margin: 50px;
+            padding: 2px 30px;
+            text-decoration: none;
+            border: solid 1px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px;
+            background-color:blue;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: black;
+        }
+        [button]:hover {
+            background-color: #c1c1c190;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Que texto
+            <br>legal!!!
+        </p>
+    </div>
+    <a href="http://google.com" target="_black" button>Google</a>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Origem CSS: Externo, Interno e Inline</title>
+    <!--a ordem que as referencias para o css importam, ou seja, o ultimo a ser colocado ganha preferecia-->
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+    <link rel="stylesheet" href="css/externo.css">
+</head>
+
+<!--já nesse caso a preferencia fica com quem está de forma inline-->
+<body style="background-color: darkgray;">
+    <h1>E agora?</h1>
+</body>
+
+</html>

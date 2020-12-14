@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        div {
+            font-size: 60px;
+            border: solid 2px;
+            padding: 40px;
+        }
+        /* ele fica de forma estatica na página */
+        .static {
+            position: static;
+            background-color: green;
+            top: 1000px;
+            left: 0px;
+        }
+        .fixed {
+            position: fixed;
+            background-color: yellow; 
+            left: 0px;
+            bottom: 100px;
+        }
+        .relative1 {
+            position: relative;
+            background-color: aqua;
+            left: 50px;
+            top: 5px;
+        }
+        .absolute1 {
+            position: relative;
+            background-color: blue;
+            left: 0px;
+            top: 200px;
+            /* right: 500px; */
+        }
+        .relative2 {
+            position: relative;
+            background-color: blueviolet;
+            /* left: 0px; */
+            width: 200px;
+            height: 200px;
+            top: 2000px;
+            /* left: 0px; */
+            /* right: 0px; */
+        }
+        .absolute2 {
+            position: absolute;
+            background-color: brown;
+            left: 0px;
+            top: 130px;
+        }
+        .absulote3 {
+            position: absolute;
+            background-color: cadetblue;
+            right: 0px;
+            bottom: 0px;
+
+        }
+        .sticky {
+            position: sticky;
+            top: 0px;
+            /* left: 50px; */
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+        <div class="absulote3"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>

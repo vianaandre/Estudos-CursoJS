@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://specificity.keegan.st/ */
+        * {
+            font-size: 50px;
+        }
+        body {
+            background-color: #bb0000;
+        }
+        .estilo {
+            background-color: rosybrown;
+        }
+        /* esse perde */
+        div[wm-cor] {   
+           background-color: aliceblue; 
+        }
+        /* esse ganha */
+        div.estilo {
+            background-color: aquamarine;
+        }
+        /* ganha da class e do atributo  */
+        #unico2 {
+            background-color:blue;
+        }
+        /* quando passa por cima do id da div */
+        #unico1:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="unico1" class="estilo" style="background-color: burlywood;">
+        #unico1 vs .estilo vs inline
+    </div>
+    <div id="unico2" class="estilo">#unico2 vs .estilo</div>
+    <div class="estilo" wm-cor>.estilo vs wm-cor</div>
+    <div wm-cor>wm-cor</div>
+    <div class="estilo">.estilo</div>
+    <div>elemento</div>
+</body>
+
+</html>

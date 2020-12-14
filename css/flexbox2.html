@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #02</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        .flex-container div {
+            width: 100px;
+            box-sizing: border-box;
+            background-color: blue;
+            /* border: solid 2px; */
+            /* margin: 2px; */
+        }
+        .flex-container {
+            display: flex;
+            height: 300px;
+            width: 600px;
+            background-color: black;
+            box-sizing: border-box;
+            /* border: solid 3px; */
+        }
+        .flex-container div:nth-child(3) {
+            background-color: red;
+            /* order - utilizado para mudar a ordem do flex-item */
+            order: 0;
+            /* passa a ser o ultimo */
+            order: 1;
+            /* passa a ser o primeiro */
+            order: -1; 
+
+            /* align-self para mudar a posição do flex-item levando em conta o cross-axis */
+            align-self: start;
+            align-self: center;
+            align-self: stretch;
+            align-self: flex-end;
+            align-self: stretch;
+        }
+        .flex-container div {
+            width: 50px;
+            flex-grow: 0;
+            flex-grow: 4;
+        }
+        .flex-container div:nth-child(1) {
+            flex-grow: 2;
+            background-color: royalblue;
+        }
+        .flex-container {
+            /* width: 300px; */
+            /* flex-shrink: 1; */
+        }
+        .flex-container div:nth-child(1) {
+            /* flex-shrink: 5; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container ">
+        <div>1</div>
+        <div style="background-color: green;">2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

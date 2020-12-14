@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #02</title>
+    <style>
+        .fora {
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+        .dentro {
+            background-color: hsl(230, 20%, 50%);
+            width: 100%;
+            height: 30%;
+            position: static;
+            position: relative;
+            position: absolute; /*leva em consideração apenas o width da tag pai, isso por causa da position: relative*/
+            position: fixed; /*por padrão ele aplica um width de 100% da tela*/
+        }
+    </style>
+</head>
+<body>
+    <div class="fora">
+        <div class="dentro"></div>
+    </div>
+</body>
+</html>

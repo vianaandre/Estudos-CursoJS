@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #02</title>
+    <style>
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: solid 5px dodgerblue;
+            background: #fff;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 40px 40px 40px;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: 
+            [colUm] 1fr 
+            [colDois] 1fr 
+            [colTres] 1fr [colFim];
+            grid-template-rows: 300px;
+            /* utilizando a propriedade para poder separar os display-item  */
+            column-gap: 20px;
+            row-gap: 40px;
+            /* utilizando junto o row-gap e o colunm-gap  */
+            gap: 10px 10px;
+            gap: 20px;
+        }
+        .d1 {
+            grid-column-start: colDois;
+            grid-column-end: colFim;
+            /* passando os valores de inicio e fim com uma mesma propriedade */
+            grid-column: colDois / colFim;
+            grid-row: 1 / 3;
+            /* utilizando o grid-colunm e o grid-row juntos  */
+            /* sempre tome cuidado para usa o "/" */
+            grid-area: 1 / colDois / 3 / colFim;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+</body>
+
+</html>

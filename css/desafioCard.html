@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .curso {
+            /* float: left; */
+            display: inline-block;
+            vertical-align: top;
+            font-family: Arial, Helvetica, sans-serif;
+            /* border: solid 1px; */
+            box-shadow: 0px 5px 10px 0px rgb(0, 0, 1, 0.3);
+            height: 300px;
+            width: 260px;
+            margin: 10px 20px;
+            padding: 5px;
+        }
+        .curso img {
+            width: 100%;
+            max-height: 50%;
+        }
+        .nomeCurso {
+            height: 80px;
+            padding: 1px;
+            /* border: solid 1px; */
+            overflow: hidden;
+        }
+        .nomeCurso h4 {
+            font-size: 20px;
+            margin: 0px;
+            /* border: solid 1px; */
+        }
+        .preco {
+            /* margin-top: 50px; */
+            padding: 20px 5px;
+            /* border: solid 1px; */
+            float: right;
+        }
+        .preco span:nth-child(1) {
+            font-size: 14px;
+            color: red;
+            text-decoration: line-through;
+        }
+        .preco span:nth-child(2) {
+            color: green;
+            font-weight: bold;         
+        }
+    </style>
+</head>
+<body>
+    <div class="curso">
+        <div>
+            <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" alt="Imagem Ilustrativa">
+        </div>
+        <div class="nomeCurso">
+            <h4>Docker - Ferramenta Essencial para Desenvolvedores</h4>
+            <p>Prof: Luciano da Serra</p>
+        </div>
+        <div class="preco">
+            <span>R$ 80,00</span>
+            <span>R$ 50,00</span>
+        </div>
+    </div>
+    <div class="curso">
+        <div>
+            <img src="http://files.cod3r.com.br/curso-web/curso2.jpg" alt="Imagem Ilustrativa">
+        </div>
+        <div class="nomeCurso">
+            <h4>Web Moderna com Javascript + Projetos</h4>
+            <p>Prof: Carlos da Silva</p>
+        </div>
+        <div class="preco">
+            <span>R$ 80,00</span>
+            <span>R$ 50,00</span>
+        </div>
+        
+    </div>
+</body>
+</html>
