@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <!-- onclick="saindo5s(event)" -->
+        <a esperaUmPouco href="https://google.com.br">Google</a>
+    </div>
+    <script>
+        // referenciando o elemento a dentro de link
+        var link = document.querySelector('a')
+
+        function saindo5s (e) {
+            // previne o comportamento padrão do eventp
+            e.preventDefault()
+            console.log('Saindo em 5s...')
+            setTimeout(() => {
+                // trocando o endereço da url atual pela url que está dentro da tag html 
+                window.location.href = link.href
+            }, 5000)
+        }
+        // referenciando o atributo criado na tag html
+        const a = document.querySelector('[esperaUmPouco')
+        // passando um evento para esse atributo 
+        a.onclick = saindo5s
+    </script>
+</body>

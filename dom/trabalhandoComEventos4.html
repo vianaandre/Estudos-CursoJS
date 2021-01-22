@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #04</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Formulário</h1>
+    <form name="pesquisa" action="http://www.google.com.br/search">
+        <input type="text" name="q" placeholder="Digite o termo...">
+        <select name="hl">
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="en-us">Inglês (Americano)</option>
+            </select>
+        <button wm-submit>Pesquisar</button>
+    </form>
+    <script>
+        // referenciar o formulario dentro de uma constante 
+        const form = document.forms[0]// pegando o primeiro formulario da página
+
+        form.onsubmit = e => {
+            // previnindo o comportamento padrão de pesquisa do formulario 
+            e.preventDefault()
+            // pegando os dados desse formulario 
+            const dados = new FormData(form)
+            // criando um novo dado, partindo do nome e do valor
+            dados.append('ajax', true)
+            // mostrando no console o prototype do FormData 
+            console.log(dados)
+            // buscando o valor de q 
+            console.log(dados.get('q'))
+            console.log(dados.get('hl'))
+            // verificando se existe o dado
+            console.log(dados.has('q'))
+
+            // aplicando um laço for of para passar por cada dado do formulario 
+            // cuide sempre para verificar se os dados não estão de forma global, então sempre utilize de let para isso
+            for(let d of dados) {
+                console.log(d)
+            }
+            // console.log(d)
+        }
+    </script>
+</body>

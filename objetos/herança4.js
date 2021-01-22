@@ -1,5 +1,5 @@
 function Meuobjeto () {}
-console.log(Meuobjeto.prototype)
+console.log(typeof Meuobjeto.prototype)
 
 const obj1 = new Meuobjeto()
 const obj2 = new Meuobjeto()

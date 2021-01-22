@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        // referenciar o body
+        const body = document.querySelector('body')
+
+        // criando um elemento dentro do document
+        const div = document.createElement('div')
+        // adicionando um classe no elemento criado 
+        div.classList.add('destaque')
+        // adicionando um atributo ao elemento 
+        div.setAttribute('wm-moderno', 'valor')
+        // adicionar um content ao elemento 
+        div.innerHTML = 'Primeiro'
+
+        const div2 = document.createElement('div')
+        div2.innerHTML = 'Segundo'
+
+        const p = document.createElement('p')
+        p.innerHTML = 'terceiro'
+        const div3 = document.createElement('div')
+        div3.classList.add('destaque')
+        div3.classList.remove('destaque')
+        // colocando o elemento criado p dentro da div3 que foi criada 
+        div3.appendChild(p)
+
+        body.appendChild(div)
+        body.appendChild(div2)
+        body.appendChild(div3)
+        
+
+        // adicionando um textNode antes do primeiro content do div3 
+        const texto = document.createTextNode('antes....')
+        div3.insertBefore(texto, div3.childNodes[0])
+
+        // clonando um elemento já criado, caso ele seja true os elemento filhos também são clonados, caso false so o elemento em sí
+        const div4 = div3.cloneNode(true)
+        body.appendChild(div4)
+
+        // removendo o div3 do body 
+        body.removeChild(div3)
+    </script>
+</body>
+
+</html>

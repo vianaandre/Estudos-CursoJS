@@ -1,21 +1,15 @@
 # Estudos-CursoJS
 Curso web moderno completo com Javascript
 
-Assuntos Tratados : 
-* Javascript 
-* NodeJS 
+-----------------------------------------------------------------------------------------
+
+# Exemplos Já Tratados: 
+* Javascript - estruturas de controle, function, objetos e arrays 
 * HTML 
-* CSS
+* CSS - Grid e Flex
 * DOM 
-* Ajax 
-* Gulp 
-* WebPack
-* Jquery 
-* Bootstrap 
-* React 
-* VueJS 
-* Electron 
-* Angular 
-* Banco Relacional 
-* Banco Não Relacional 
-* Express
+* AJAX - Fetch e Axios 
+
+-----------------------------------------------------------------------------------------
+
+Aluno - André Gustavo Viana 

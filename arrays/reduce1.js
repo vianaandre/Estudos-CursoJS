@@ -8,7 +8,7 @@ const alunos = [
 const transformando = alunos.map(e => e.nota).reduce(function(acumulador, atual){
     console.log(acumulador, atual)
     return acumulador + atual 
-}, 11)
+})
 
 console.log(transformando)
 

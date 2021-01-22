@@ -13,3 +13,8 @@ console.log(escola.replace(3, 4))//SUBSTITIU
 
 console.log('Andre,Ana,Bianca'.split())//QUEBRA UMA FUNÇÃO EM ARRAY 
 
+const nomes = 'Andre,Ana,Bianca'
+// const array = nomes.split()
+console.log(nomes.replace(",", " - "))
+
+

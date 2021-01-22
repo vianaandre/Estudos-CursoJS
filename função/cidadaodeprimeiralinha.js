@@ -32,3 +32,5 @@ function soma(a, b) {
 }
 soma(1, 5)(3)
 
+
+

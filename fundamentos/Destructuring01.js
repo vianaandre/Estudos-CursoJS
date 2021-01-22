@@ -14,7 +14,7 @@ const dados = {
     }
 }
 
-const { nome, idade} = dados // Serve para pegar valores especificos dentro de um objeto 
+const { nome, idade } = dados // Serve para pegar valores especificos dentro de um objeto 
 console.log('Me chamo ' + nome + ' e tenho ' + idade)
 
 const { Hobby: h, Estudos: e} = dados 

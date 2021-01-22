@@ -1,10 +1,11 @@
-const saudacao = 'Olá' //contexto léxico 1
+var saudacao = 'Olá' //contexto léxico 1
 
-function teste(saudacao){
+function teste(){
+    saudacao = 'eai'
     return saudacao   //contexto léxico 2 
 }
 
-console.log(teste('Seja Bem vindo'))
+console.log(teste())
 console.log(saudacao);
 
 /*no contexto léxico os nomes são endereçados em diferentes locais, eles até podem ter o mesmo 

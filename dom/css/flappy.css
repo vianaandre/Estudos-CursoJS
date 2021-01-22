@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+/* impotando a font pixel da pasta fonts */
+@font-face {
+    font-family: 'pixel';
+    src: url(../fonts/Pixel.ttf);
+}
+/* estilizando a div principal do jogo */
+[wm-flappy] {
+    border: 5px solid dodgerblue;
+    position: relative;
+    height: 500px;
+    width: 1200px;
+    margin: 10px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+/* estilizando o passaro */
+.passaro {
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 30px);
+}
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.par-barreira {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* essa propriedade que faz os canos se dividirem */
+    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+}
+/* estilizando as duas barreiras  */
+
+/* estilizando a borda do cano de cima do cano */
+.borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
+}
+/* estilizando o corpo do cano */
+.corpo {
+    width: 110px;
+    height: 100px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+/* estilizando o contador de progresso */
+.progresso {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-family: 'pixel';
+    font-size: 60px;
+}

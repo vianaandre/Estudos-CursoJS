@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #04</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <p>Início</p>
+    </div>
+    <div>
+        <ul>
+            <li>Pedro</li>
+            <li>Ana</li>
+            <li>Bia</li>
+        </ul>
+    </div>
+    <div>
+        <p>Fim</p>
+    </div>
+    <script>
+        // função que irá ser passada no prototype dos métodos que retornam os elementos 
+        function log () {
+            console.log(this)
+        }
+
+        // passando o método prototype para os prototypes das lisas que retorna os elementos 
+        HTMLCollection.prototype.log = log
+        HTMLElement.prototype.log = log
+        NodeList.prototype.log = log
+        Node.prototype.log = log
+        
+        // selecionando a lista ul 
+        const lista = document.querySelector('div ul')
+        lista.log()
+        // retorna uma elemento antes do selecionado 
+        lista.parentNode.log()
+        // retorna um NodeList com os elementos filhos do querySelector 
+        lista.childNodes.log()
+
+        // pegando o primeiro filho 
+        const primeiro = lista.firstChild
+        primeiro.log()
+        primeiro.nextSibling.log()
+
+        // pegando o utlimo elemento filho
+        const ultimo = lista.lastChild
+        ultimo.log()
+        // pegando o li de Bia, que seria um antes do ultimo
+        ultimo.previousSibling.log()
+
+        // me retorna um HTMLCollection sem os espaços da semântica do html
+        lista.children.log()
+        // pegando o primeiro elemento filho do htmlCollection
+        const primeiroCollection = lista.firstElementChild
+        primeiroCollection.log()
+        // pegando o ultimo elemento filho
+        lista.lastElementChild.log()
+        // pegando o do meio 
+        primeiroCollection.nextElementSibling.log()
+        // pegando a div anterior da div pai do querySelctor 
+        lista.parentNode.previousElementSibling.log()
+
+        // forma certa de pegar 
+        document.querySelectorAll('div ul li').log()
+        
+    </script>
+</body>
+
+</html>

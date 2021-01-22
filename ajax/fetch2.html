@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Fetch API #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Formulário Via Fetch</h1>
+    <form name="usuarioForm" action="formulario" method="post">
+        <input type="text" name="nome" placeholder="Nome..." />
+        <input type="text" name="sobrenome" placeholder="Sobrenome..." />
+        <button>Salvar</button>
+    </form>
+    <div id="resultado"></div>
+    <script>
+        document.usuarioForm.onsubmit = async e => {
+            // preveni o evento 
+            e.preventDefault()
+
+            // peguei o elemento que recebeu o evento 
+            const form = e.target
+            // adicionei ele dentro do FormData 
+            const data = new FormData(form)
+
+            const option = {
+                method: form.method, // pegando método que foi usado, que seria o post 
+                body: new URLSearchParams(data) // pegando os dados que forma junto a url
+            }
+
+            var resultado = document.getElementById('resultado')
+            // fetch(form.action, option).then(resp => resp.json()).then(json => {
+            //     const resultado = document.getElementById('resultado')
+            //     resultado.textContent = JSON.stringify(json)
+            // }).catch(e => {
+            //     const resultado = document.getElementById('resultado')
+            //     resultado.textContent = e
+            // })
+
+            // fazendo a requisição 
+            try {
+                // retorna os dados da requisição do método post 
+                const resp = await fetch(form.action, option)
+                // transforma esses dados em json
+                const json = await resp.json()
+                // e manda para a div com id resultado já transformado em sting 
+                resultado.textContent = JSON.stringify(json)
+            }
+            // tratando caso aja erro 
+            catch (e) {
+                resultado.textContent = e
+            }
+
+        } 
+    </script>
+</body>

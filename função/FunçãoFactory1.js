@@ -6,4 +6,4 @@ function Cadastro () {
     }
 }
 
-console.log(Cadastro())
+console.log(Cadastro().nome)

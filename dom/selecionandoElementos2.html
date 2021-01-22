@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #02</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
+    <script>
+        // selecionou o id primeiro e aplciou uma classe chamada destaque 
+        document.querySelector('#primeiro').classList.add('destaque')
+
+        // criar um função de adicionar classes a um determinado elemento que foi pego pelo querySelector 
+        const adicionar = seletor => {
+            document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+        }
+        // criar função de remover a classe de um determindo elemento que foi selecionado por querySelector
+        const remover = seletor => {
+            document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+        }
+
+        adicionar('*')
+        remover('*')
+        adicionar('#primeiro')
+        // remover('#primeiro')
+        adicionar('.terceiro.ultimo')
+        // adicionar('*')
+        // adicionar('not:(#primeiro)')
+        // remover(':nth-child(1)')
+        remover('#primeiro')
+        remover('*')
+        adicionar('[wb-attrib]')
+    </script>
+</body>
+</html>

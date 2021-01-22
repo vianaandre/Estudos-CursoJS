@@ -14,6 +14,10 @@ for(let atributos in pessoa){ // coloque variável para poder pertencer somente 
     console.log(`${atributos} = ${pessoa[atributos]}`)
 }
 
+for(let e of notas) {
+    console.log(e)
+}
+
 // console.log(pessoa)
 
 // muito usado com os indices de uma determina função 

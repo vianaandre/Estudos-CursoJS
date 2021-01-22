@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Atributos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <label for="compras">Compras</label>
+        <ul id="compras" destino='escritório' data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartável</li>
+        </ul>
+    </div>
+    <script>
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        console.log(lista)
+        console.log("listas filhos: " + lista.childNodes)
+        console.log(lista.destino)
+        // lendo a propriedade personalizada destino
+        console.log(lista.getAttribute('destino'))
+        // verificando se existe a propriedade personalizada data-urgencia 
+        console.log(lista.hasAttribute('data-urgencia'))
+        // mudando o valor, ou criando propriedades personalizadas 
+        lista.setAttribute('destino', 'lindo')
+        lista.setAttribute('data-date', '12/2020')
+        lista.setAttribute('data-lindo', 'André')
+        console.log(lista.getAttribute('destino'))
+        console.log(lista.getAttribute('data-date'))
+        // removendo propriedades personalizas
+        lista.removeAttribute('destino')
+        console.log(lista.getAttribute('destino'))
+        lista.setAttribute('destino', 'escritório')
+        console.log(lista.getAttribute('destino'))
+
+        // acessando a data-set do elemento - nele você você terá armezado todos as propriedades criadas com prefixo date 
+        console.log(lista.dataset)
+        console.log(lista.dataset.urgencia)
+        lista.dataset.urgencia = 3
+        console.log(lista.dataset.urgencia)
+
+        // cuidado 
+        const label = document.querySelector('label')
+        console.log(label.for)
+        console.log(label.htmlFor)
+    </script>
+</body>
+
+</html>

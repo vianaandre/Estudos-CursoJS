@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Ajax com jQuery</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <!-- instacia da bibliotaca jquery -->
+    <script src="js/jquery.js"></script>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>jQuery Get/Post</h1>
+    <div id="get"></div>
+    <div id="post"></div>
+
+    <script>
+        function exibirResultado (id, dados) {
+            const texto = JSON.stringify(dados)
+
+            document.getElementById(id).innerHTML = texto
+        }
+
+        // chamando a função ajax do jQuery
+        $.ajax({
+            // passando a url 
+            url: 'parOuImpar',
+            // passando o método 
+            method: 'get', 
+            // passando os dados que vão do front-end para o back-end 
+            data: {
+                numero: 7
+            }, 
+            // chamando a função de sucesso onde chama a função de exibir resultado 
+            success(data) {
+                exibirResultado('get', data)
+            },
+            error(e) {
+                exibirResultado('get', e)
+            }
+        }) 
+
+        $.ajax({
+            url: 'formulario', 
+            method: 'post', 
+            data: {
+                nome: 'André', 
+                sobrenome: 'Viana'
+            }, 
+            success(data) {
+                exibirResultado('post', data)
+            }, 
+            error(e) {
+                exibirResultado('post', e)
+            }
+        })
+    </script>
+</body>

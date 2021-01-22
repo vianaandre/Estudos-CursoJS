@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>Elemento</div>
+    <script>
+        // selecionar o elemento 
+        const item = document.querySelector('div')
+        // com a propriedade absolute, o elemento ignora os outros elementos, tornando ele maleável
+        item.style.position = 'absolute'
+
+        // utilizando do evento de move, ou seja, movendo o elemento com um evento especifico 
+        item.onmousemove = event => {
+            // aqui estamos selecioando o elemento que recebeu o event, ou seja, isso acontece a partir da propriedade de target 
+            const e = event.target
+            item.style.cursor = 'move'
+            // esse condição será atendida caso retorna um valor maior que 0, ou seja, o item só podera ser movido caso seja clicado em cima 
+            if (event.buttons) {
+                e.style.top = `${event.clientY - (item.clientHeight / 2)}px`
+                e.style.left = `${event.clientX - (item.clientWidth / 2)}px`
+            }
+
+        }
+    </script>
+</body>
